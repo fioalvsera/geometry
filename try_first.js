@@ -1,5 +1,3 @@
-//node index.js cylinder [radio] [altura]
-//node index.js square [lado]
 
 var firstNum = process.argv[2]
 var secondNum = process.argv[3]
