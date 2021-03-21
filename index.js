@@ -2,28 +2,31 @@
 //node index.js square [side]
 
 var shape = process.argv[2] // [shape] cylynder || square
-var firstNum = process.argv[3] // [radius] || [side]
-var secondNum = process.argv[4] // [height]
  
 if ( shape == "cylinder") {
   
+  let firstNum = process.argv[3] // [radius] || [side]
+  let secondNum = process.argv[4] // [height]
+
   console.log("cylinder")
-  var radioBase = firstNum
-  var height = secondNum
+  let radioBase = firstNum
+  let height = secondNum
   console.log("the radio of the base is " + radioBase)
   console.log("the height is " + height)
 
-  var area = (radioBase * radioBase) * 3.14
-  var volume = area * height 
+  let area = (radioBase * radioBase) * 3.14
+  let volume = area * height 
   console.log("the volume is " + volume)
 
 } else if (shape == "square"){
   
+  let firstNum = process.argv[3] // [radius] || [side]
+
   console.log("square")
-  var side = firstNum
+  let side = firstNum
   console.log("the side's lenth is " + side)
 
-  var area = side * side 
+  let area = side * side 
   console.log("the area is " + area) 
 
 } else {
