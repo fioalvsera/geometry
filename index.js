@@ -1,29 +1,31 @@
-//node index.js cylinder [radio] [altura]
-//node index.js square [lado]
+//node index.js cylinder [radius] [height]
+//node index.js square [side]
 
-var firstNum = process.argv[2]
-var secondNum = process.argv[3]
+var shape = process.argv[2] // [shape] cylynder || square
  
+if ( shape == "cylinder") {
+  
+  let radioBase = process.argv[3] // [radius] || [side]
+  let height = process.argv[4] // [height]
 
-if ( secondNum != undefined && firstNum != undefined){
+  console.log("cylinder")
+  console.log("the radio of the base is " + radioBase)
+  console.log("the height is " + height)
 
-console.log("cilindro")
-var radioBase = firstNum
-var height = secondNum
-console.log("the radio of the base is " + radioBase)
-console.log("the height is " + height)
+  let area = (radioBase * radioBase) * 3.14
+  let volume = area * height 
+  console.log("the volume is " + volume)
 
-var area = (radioBase * radioBase) * 3.14
-var volume = area * height 
-console.log("the volume is " + volume)
+} else if (shape == "square"){
+  
+  let side = process.argv[3] // [radius] || [side]
 
-} else if (firstNum != undefined){
- console.log(" cuadrado")
-var side = firstNum
-console.log("the side's lenth is " + side)
+  console.log("square")
+  console.log("the side's lenth is " + side)
 
-var area = side * side 
-console.log("the area is " + area) 
+  let area = side * side 
+  console.log("the area is " + area) 
+
 } else {
-    console.log ("sorry")
+  console.log ("Sorry that geometric shape is not supported.")
 }
