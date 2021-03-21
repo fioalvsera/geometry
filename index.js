@@ -1,5 +1,5 @@
-//node index.js cylinder [radio] [altura]
-//node index.js square [lado]
+//node index.js cylinder [radius] [height]
+//node index.js square [side]
 
 var firstNum = process.argv[2]
 var secondNum = process.argv[3]
@@ -7,7 +7,7 @@ var secondNum = process.argv[3]
 
 if ( secondNum != undefined && firstNum != undefined){
 
-console.log("cilindro")
+console.log("cylinder")
 var radioBase = firstNum
 var height = secondNum
 console.log("the radio of the base is " + radioBase)
@@ -18,7 +18,7 @@ var volume = area * height
 console.log("the volume is " + volume)
 
 } else if (firstNum != undefined){
- console.log(" cuadrado")
+ console.log("square")
 var side = firstNum
 console.log("the side's lenth is " + side)
 
