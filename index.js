@@ -1,10 +1,9 @@
 //node index.js cylinder [radius] [height]
 //node index.js square [side]
 
-var firstNum = process.argv[2]
-var secondNum = process.argv[3]
+var firstNum = process.argv[3] // [radius] || [side]
+var secondNum = process.argv[4] // [height]
  
-
 if ( secondNum != undefined && firstNum != undefined){
 
 console.log("cylinder")
