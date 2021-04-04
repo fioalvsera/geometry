@@ -3,7 +3,14 @@
 
 var shape = process.argv[2] // [shape] cylynder || square
 
-let area = 0
+function getCylinderVolume(radio, height){
+    let area = (radio * radio) * 3.14
+    return area * height
+}
+
+function getSquareArea(side){
+    return side * side
+}
 
 switch(shape){
     case "cylinder":
@@ -14,8 +21,7 @@ switch(shape){
         console.log("the radio of the base is " + radioBase)
         console.log("the height is " + height)
 
-        area = (radioBase * radioBase) * 3.14
-        let volume = area * height
+        let volume = getCylinderVolume(radioBase, height)
         console.log("the volume is " + volume)
         break;
 
@@ -25,7 +31,7 @@ switch(shape){
         console.log("square")
         console.log("the side's length is " + side)
 
-        area = side * side
+        let area = getSquareArea(side)
         console.log("the area is " + area)
         break;
 
