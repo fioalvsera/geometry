@@ -24,25 +24,10 @@ function getCircleArea(radio){
 
 var area = 0
 
-switch(shape){
-    case "square":
-
-        area = getSquareArea(infoBase)
-        break;
-
-    case "rectangle":
-
-       area = getRectArea(infoBase, infoHeight)
-       break;
-
-    case "circle":
-
-        area = getCircleArea(infoBase)
-        break;
-}
 
 switch(shape){
     case "cylinder":
+
 
         console.log("cylinder")
         console.log("the radio of the base is " + infoBase)
@@ -54,6 +39,8 @@ switch(shape){
 
     case "square":
 
+        area = getSquareArea(infoBase)
+
         console.log("square")
         console.log("the side's length is " + infoBase)
 
@@ -61,6 +48,8 @@ switch(shape){
         break;
 
     case "rectangle":
+
+        area = getRectArea(infoBase, infoHeight)
 
         console.log("rectangle")
         console.log(`the base's length is: ${infoBase}`)
@@ -70,6 +59,8 @@ switch(shape){
         break;
 
     case "circle":
+
+        area = getCircleArea(infoBase)
 
         console.log("circle")
         console.log("the radio's base is:" + infoBase)
