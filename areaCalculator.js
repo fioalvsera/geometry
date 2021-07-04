@@ -19,27 +19,27 @@ const runAreaCalculator = async function()  {
     let area = 0
     switch (figure) {
         case "square":
-            const sideLenght = await readLineAsync("What's your side's lenght?")
-            area = geometry.getSquareArea(sideLenght)
+            const sideLength = await readLineAsync("What's your side's length?")
+            area = geometry.getSquareArea(sideLength)
             console.log(area)
             break;
 
         case "rectangle":
-            const heightq = await readLineAsync("What's your height's lenght?")
-            const baseq = await readLineAsync("What's your bases's lenght?")
-            area = geometry.getRectArea(baseq,heightq)
+            const heightRectangle = await readLineAsync("What's your height's length?")
+            const baseRectangle = await readLineAsync("What's your bases's length?")
+            area = geometry.getRectArea(baseRectangle,heightRectangle)
             console.log(area)
             break;
 
         case "cylinder":
-            const baser = await readLineAsync("What's your radio's lenght?")
-            const height = await readLineAsync("What's your height?")
-            area = geometry.getCylinderVolume(baser,height)
+            const baseCylinder = await readLineAsync("What's your radio's length?")
+            const heightCylinder = await readLineAsync("What's your height?")
+            area = geometry.getCylinderVolume(baseCylinder,heightCylinder)
             console.log(area)
             break;
 
         case "circle":
-            const radio = await readLineAsync("What's your radio's lenght?")
+            const radio = await readLineAsync("What's your radio's length?")
             area = geometry.getCircleArea(radio)
             console.log(area)
             break;
