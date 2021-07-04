@@ -14,7 +14,7 @@ async function readLineAsync(message) {
     });
 }
 
-const question = async () => {
+const runAreaCalculator = async function()  {
     const figure = await readLineAsync("What's your figure's name?")
     let area = 0
     switch (figure) {
@@ -46,4 +46,4 @@ const question = async () => {
     }
 }
 
-question()
+module.exports = runAreaCalculator
