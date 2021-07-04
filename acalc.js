@@ -1,3 +1,5 @@
+const geometry = require("./geometry.js")
+
 const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
@@ -12,46 +14,34 @@ async function readLineAsync(message) {
     });
 }
 
-function getSquareArea(side){
-    console.log(side * side)
-}
-
-function getRectArea(base, height){
-    console.log(base * height)
-}
-
-function getCircleArea(radio){
-    console.log((radio * radio) * 3.14)
-}
-
-function getCylinderVolume(radio, height){
-    let area = ((radio * radio) * 3.14) * height
-    console.log(area)
-}
-
 const question = async () => {
     const figure = await readLineAsync("What's your figure's name?")
+    let area = 0
     switch (figure) {
         case "square":
-            const sidelenght = await readLineAsync("What's your side's lenght?")
-            getSquareArea(sidelenght)
+            const sideLenght = await readLineAsync("What's your side's lenght?")
+            area = geometry.getSquareArea(sideLenght)
+            console.log(area)
             break;
 
         case "rectangle":
             const heightq = await readLineAsync("What's your height's lenght?")
             const baseq = await readLineAsync("What's your bases's lenght?")
-            getRectArea(baseq,heightq)
+            area = geometry.getRectArea(baseq,heightq)
+            console.log(area)
             break;
 
         case "cylinder":
             const baser = await readLineAsync("What's your radio's lenght?")
             const height = await readLineAsync("What's your height?")
-            getCylinderVolume(baser,height)
+            area = geometry.getCylinderVolume(baser,height)
+            console.log(area)
             break;
 
         case "circle":
             const radio = await readLineAsync("What's your radio's lenght?")
-            getCircleArea(radio)
+            area = geometry.getCircleArea(radio)
+            console.log(area)
             break;
     }
 }

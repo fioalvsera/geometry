@@ -23,6 +23,4 @@ let g = {
     "getCylinderVolume": getCylinderVolume
 }
 
-let a = "fo"
-
 module.exports = g
