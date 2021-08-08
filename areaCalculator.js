@@ -1,10 +1,11 @@
-const geometry = require("./geometry.js")
+const geometry = require("./geometry.js");
+//const persistenceCsv = require("./persistenceCsv");
+//const index = require("./index.js");
 
 const readline = require('readline').createInterface({
     input: process.stdin,
     output: process.stdout
 })
-
 
 async function readLineAsync(message) {
     return new Promise((resolve, reject) => {
@@ -14,6 +15,8 @@ async function readLineAsync(message) {
     });
 }
 
+let allFiguresData = []
+
 const runAreaCalculator = async function()  {
     const figure = await readLineAsync("What's your figure's name?")
     let area = 0
@@ -21,7 +24,14 @@ const runAreaCalculator = async function()  {
         case "square":
             const sideLength = await readLineAsync("What's your side's length?")
             area = geometry.getSquareArea(sideLength)
-            console.log(area)
+            console.log(`the area of the figure is ${area}`)
+            let figureData = {
+                id: "8",
+                side: sideLength,
+                area: area.toString(),
+                figure_type: "square"
+            }
+            allFiguresData.push(figureData)
             break;
 
         case "rectangle":
@@ -46,4 +56,10 @@ const runAreaCalculator = async function()  {
     }
 }
 
-module.exports = runAreaCalculator
+runAreaCalculator()
+//console.log(allFiguresData)
+
+module.exports = {
+    runAreaCalculator: runAreaCalculator
+}
+
