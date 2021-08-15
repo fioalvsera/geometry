@@ -10,3 +10,26 @@ id,side,area,figure_type
 7,6,36,square
 6,2,4,square
 7,6,36,square
+8,5,25,square
+8,6,36,square
+f1574c5a-7896-4163-8f9f-331ab8471a82,6,36,square
+fd74a25d-b45a-4303-b1c7-6e101cfaf326,8,64,square
+a261fb48-f4f4-49ce-b9a0-f80625222231,2 & 6,12,rectangle
+4e0b1047-e284-4d58-bcd6-f579d2e61e43,8 & 2,401.92,cylinder
+7610e21b-90df-4f19-b900-85cf88a8d81e,6,113.04,circle
+0023d0f3-aef9-48ae-99b2-4ddab21536b6,5,25,square
+9c7e3877-6a8d-470d-b0e5-b003047fda34,6 & 3,339.12,cylinder
+cc90a159-748c-4848-a8f6-32698220d066,6,36,square
+9e4fd77d-1606-4b67-9c3e-e8590a68a42e,6,36,square
+4f284419-5e7b-4a32-a420-e38e13f9211a,3 & 5,15,rectangle
+40b691e9-7186-4677-a453-e94b47a3df8d,5 & 2,157,cylinder
+4224b142-e76d-4f58-9650-cfffa510f521,5,78.5,circle
+da898f90-281f-4ebe-ba96-878efbde124d,5,25,square
+b8f819f9-b767-4ace-92fe-c133b8cc2ec0,5 & 5,25,rectangle
+7c664d65-7cca-4ad4-90dc-a62108352739,5,78.5,circle
+d5f713ee-89fe-4f51-89f4-03874fd3c457,5 & 5,392.5,cylinder
+b3e09a94-6497-4db6-8af7-eeb2b813f1ba,5,25,square
+191bb61c-9075-4c35-aefb-f363d06e8139,5,25,square
+e78a517d-3daf-41f6-b6f9-12d8728392d1,5 & 5,25,rectangle
+8a786e40-a6fe-4cc2-b1ac-0941f13e68c5,5 & 5,392.5,cylinder
+3fefa58f-5a50-443f-a8e7-b63172946b9f,69 & 56,3864,rectangle
