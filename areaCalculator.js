@@ -1,7 +1,6 @@
 const geometry = require("./geometry.js");
 const persistenceCsv = require("./persistenceCsv");
 const { v4: uuidv4 } = require('uuid')
-//const index = require("./index.js");
 
 const readline = require('readline').createInterface({
     input: process.stdin,
